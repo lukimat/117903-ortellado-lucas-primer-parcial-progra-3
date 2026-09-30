@@ -23,7 +23,7 @@ async function traerSeriesPorPagina(numeroPagina) {
             if (respuesta.status === 200) {
                 let info = await respuesta.json();
                 let nuevaSerie = new Serie(
-                    info.id,
+                    info.id,    
                     info.url,
                     info.name,
                     info.language,
